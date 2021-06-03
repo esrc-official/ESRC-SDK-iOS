@@ -1,0 +1,309 @@
+// swift-interface-format-version: 1.0
+// swift-compiler-version: Apple Swift version 5.3.2 (swiftlang-1200.0.45 clang-1200.0.32.28)
+// swift-module-flags: -target arm64-apple-ios12.0 -enable-objc-interop -enable-library-evolution -swift-version 5 -enforce-exclusivity=checked -Onone -module-name ESRC_SDK_iOS
+@_exported import ESRC_SDK_iOS
+import Foundation
+import Swift
+import UIKit
+@_hasMissingDesignatedInitializers public class RemoteHREstimator {
+  @objc deinit
+}
+public class ESRCPoint2f {
+  public init()
+  public init(x: Swift.Float, y: Swift.Float)
+  public init(other: ESRC_SDK_iOS.ESRCPoint2f)
+  public func getX() -> Swift.Float
+  public func getY() -> Swift.Float
+  public func setX(x: Swift.Float)
+  public func setY(y: Swift.Float)
+  public func setPoint(point: ESRC_SDK_iOS.ESRCPoint2f)
+  public func toString() -> Swift.String
+  @objc deinit
+}
+public class ESRCFace {
+  public init()
+  public init(x: Swift.Int, y: Swift.Int, w: Swift.Int, h: Swift.Int)
+  public init(other: ESRC_SDK_iOS.ESRCFace)
+  public func getX() -> Swift.Int
+  public func getY() -> Swift.Int
+  public func getW() -> Swift.Int
+  public func getH() -> Swift.Int
+  public func setX(x: Swift.Int)
+  public func setY(y: Swift.Int)
+  public func setW(w: Swift.Int)
+  public func setH(h: Swift.Int)
+  public func setFace(face: ESRC_SDK_iOS.ESRCFace)
+  public func toString() -> Swift.String
+  @objc deinit
+}
+public class ESRCFacialLandmark {
+  public static var FACIAL_LANDMARK_COUNT: Swift.Int
+  public init()
+  public init(x: [Swift.Float], y: [Swift.Float])
+  public init(other: ESRC_SDK_iOS.ESRCFacialLandmark)
+  public func getX() -> [Swift.Float]
+  public func getX(index: Swift.Int) -> Swift.Float
+  public func getY() -> [Swift.Float]
+  public func getY(index: Swift.Int) -> Swift.Float
+  public func setX(x: [Swift.Float])
+  public func setX(index: Swift.Int, x: Swift.Float)
+  public func setY(index: Swift.Int, y: Swift.Float)
+  public func setFacialLandmark(facialLandmark: [Swift.Float])
+  public func toString() -> Swift.String
+  @objc deinit
+}
+public class ESRCFacialActionUnit {
+  public static var FACIAL_ACTION_UNIT_COUNT: Swift.Int
+  public static var FACIAL_ACTION_UNIT_1_LEFT: Swift.Int
+  public static var FACIAL_ACTION_UNIT_1_RIGHT: Swift.Int
+  public static var FACIAL_ACTION_UNIT_2_LEFT: Swift.Int
+  public static var FACIAL_ACTION_UNIT_2_RIGHT: Swift.Int
+  public static var FACIAL_ACTION_UNIT_4_MID: Swift.Int
+  public static var FACIAL_ACTION_UNIT_5_LEFT: Swift.Int
+  public static var FACIAL_ACTION_UNIT_5_RIGHT: Swift.Int
+  public static var FACIAL_ACTION_UNIT_6_LEFT: Swift.Int
+  public static var FACIAL_ACTION_UNIT_6_RIGHT: Swift.Int
+  public static var FACIAL_ACTION_UNIT_7_LEFT: Swift.Int
+  public static var FACIAL_ACTION_UNIT_7_RIGHT: Swift.Int
+  public static var FACIAL_ACTION_UNIT_9_LEFT: Swift.Int
+  public static var FACIAL_ACTION_UNIT_9_RIGHT: Swift.Int
+  public static var FACIAL_ACTION_UNIT_10_MID: Swift.Int
+  public static var FACIAL_ACTION_UNIT_11_MID: Swift.Int
+  public static var FACIAL_ACTION_UNIT_12_LEFT: Swift.Int
+  public static var FACIAL_ACTION_UNIT_12_RIGHT: Swift.Int
+  public static var FACIAL_ACTION_UNIT_14_LEFT: Swift.Int
+  public static var FACIAL_ACTION_UNIT_14_RIGHT: Swift.Int
+  public static var FACIAL_ACTION_UNIT_15_LEFT: Swift.Int
+  public static var FACIAL_ACTION_UNIT_15_RIGHT: Swift.Int
+  public static var FACIAL_ACTION_UNIT_16_MID: Swift.Int
+  public static var FACIAL_ACTION_UNIT_18_MID: Swift.Int
+  public static var FACIAL_ACTION_UNIT_20_LEFT: Swift.Int
+  public static var FACIAL_ACTION_UNIT_20_RIGHT: Swift.Int
+  public static var FACIAL_ACTION_UNIT_21_MID: Swift.Int
+  public static var FACIAL_ACTION_UNIT_22_MID: Swift.Int
+  public static var FACIAL_ACTION_UNIT_25_MID: Swift.Int
+  public static var FACIAL_ACTION_UNIT_26_MID: Swift.Int
+  public static var FACIAL_ACTION_UNIT_27_MID: Swift.Int
+  public static var FACIAL_ACTION_UNIT_28_MID: Swift.Int
+  public static var FACIAL_ACTION_UNIT_29_MID: Swift.Int
+  public static var FACIAL_ACTION_UNIT_30_MID: Swift.Int
+  public static var FACIAL_ACTION_UNIT_35_LEFT: Swift.Int
+  public static var FACIAL_ACTION_UNIT_35_RIGHT: Swift.Int
+  public static var FACIAL_ACTION_UNIT_38_LEFT: Swift.Int
+  public static var FACIAL_ACTION_UNIT_38_RIGHT: Swift.Int
+  public static var FACIAL_ACTION_UNIT_43_LEFT: Swift.Int
+  public static var FACIAL_ACTION_UNIT_43_RIGHT: Swift.Int
+  public init()
+  public init(centroid: [ESRC_SDK_iOS.ESRCPoint2f], area: [Swift.Float], theta: [Swift.Float], r: [Swift.Float])
+  public init(other: ESRC_SDK_iOS.ESRCFacialActionUnit)
+  public func getCentroid() -> [ESRC_SDK_iOS.ESRCPoint2f]
+  public func getCentroid(index: Swift.Int) -> ESRC_SDK_iOS.ESRCPoint2f
+  public func getArea() -> [Swift.Float]
+  public func getArea(index: Swift.Int) -> Swift.Float
+  public func getTheta() -> [Swift.Float]
+  public func getTheta(index: Swift.Int) -> Swift.Float
+  public func getR() -> [Swift.Float]
+  public func getR(index: Swift.Int) -> Swift.Float
+  public func setCentroid(centroid: [ESRC_SDK_iOS.ESRCPoint2f])
+  public func setCentroid(index: Swift.Int, centroid: ESRC_SDK_iOS.ESRCPoint2f)
+  public func setArea(area: [Swift.Float])
+  public func setArea(index: Swift.Int, area: Swift.Float)
+  public func setTheta(theta: [Swift.Float])
+  public func setTheta(index: Swift.Int, theta: Swift.Float)
+  public func setR(r: [Swift.Float])
+  public func setR(index: Swift.Int, r: Swift.Float)
+  public func setFacialActionUnit(facialActionUnit: ESRC_SDK_iOS.ESRCFacialActionUnit)
+  public func toString() -> Swift.String
+  @objc deinit
+}
+public class ESRCFacialExpression {
+  public static var FACIAL_EXPRESSION_COUNT: Swift.Int
+  public static var FACIAL_EXPRESSION_NONE: Swift.Int
+  public static var FACIAL_EXPRESSION_ANGER: Swift.Int
+  public static var FACIAL_EXPRESSION_DISGUST: Swift.Int
+  public static var FACIAL_EXPRESSION_FEAR: Swift.Int
+  public static var FACIAL_EXPRESSION_HAPPY: Swift.Int
+  public static var FACIAL_EXPRESSION_SAD: Swift.Int
+  public static var FACIAL_EXPRESSION_SURPRISE: Swift.Int
+  public static var FACIAL_EXPRESSION_NEUTRAL: Swift.Int
+  public init()
+  public init(emotionProbs: [Swift.Float], emotion: Swift.Int)
+  public init(other: ESRC_SDK_iOS.ESRCFacialExpression)
+  public func getEmotionProbs() -> [Swift.Float]
+  public func getEmotionProbs(index: Swift.Int) -> Swift.Float
+  public func getEmotion() -> Swift.Int
+  public func setEmotionProbs(emotionProbs: [Swift.Float])
+  public func setEmotionProb(index: Swift.Int, emotionProb: Swift.Float)
+  public func setEmotion(emotion: Swift.Int)
+  public func setFacialExpression(facialExpression: ESRC_SDK_iOS.ESRCFacialExpression)
+  public func getEmotionStr() -> Swift.String
+  public func toString() -> Swift.String
+  @objc deinit
+}
+public class ESRCHeadPose {
+  public init()
+  public init(thetaX: Swift.Double, thetaY: Swift.Double, thetaZ: Swift.Double)
+  public init(other: ESRC_SDK_iOS.ESRCHeadPose)
+  public func getThetaX() -> Swift.Double
+  public func getThetaY() -> Swift.Double
+  public func getThetaZ() -> Swift.Double
+  public func setThetaX(thetaX: Swift.Double)
+  public func setThetaY(thetaY: Swift.Double)
+  public func setThetaZ(thetaZ: Swift.Double)
+  public func setHeadPose(headPose: ESRC_SDK_iOS.ESRCHeadPose)
+  public func toString() -> Swift.String
+  @objc deinit
+}
+public class ESRCAttention {
+  public init()
+  public init(isAttend: Swift.Bool)
+  public init(other: ESRC_SDK_iOS.ESRCAttention)
+  public func getIsAttend() -> Swift.Bool
+  public func setIsAttend(isAttend: Swift.Bool)
+  public func toString() -> Swift.String
+  @objc deinit
+}
+public class ESRCRemoteHR {
+  public init()
+  public init(hr: Swift.Double)
+  public init(other: ESRC_SDK_iOS.ESRCRemoteHR)
+  public func getHR() -> Swift.Double
+  public func setHR(hr: Swift.Double)
+  public func toString() -> Swift.String
+  @objc deinit
+}
+public class ESRCHRV {
+  public static var HRV_COUNT: Swift.Int
+  public init()
+  public init(bpm: Swift.Double, sdnn: Swift.Double, rmssd: Swift.Double, pnn50: Swift.Double, vlf: Swift.Double, lf: Swift.Double, hf: Swift.Double, vlfp: Swift.Double, lfp: Swift.Double, hfp: Swift.Double, tp: Swift.Double, lnVlf: Swift.Double, lnLf: Swift.Double, lnHf: Swift.Double, lnTp: Swift.Double, normLf: Swift.Double, normHf: Swift.Double, lfHf: Swift.Double, cohRatio: Swift.Double)
+  public init(hrv: [Swift.Double])
+  public init(other: ESRC_SDK_iOS.ESRCHRV)
+  public func getBpm() -> Swift.Double
+  public func getSdnn() -> Swift.Double
+  public func getRmssd() -> Swift.Double
+  public func getPnn50() -> Swift.Double
+  public func getVlf() -> Swift.Double
+  public func getLf() -> Swift.Double
+  public func getHf() -> Swift.Double
+  public func getVlfp() -> Swift.Double
+  public func getLfp() -> Swift.Double
+  public func getHfp() -> Swift.Double
+  public func getTp() -> Swift.Double
+  public func getLnVlf() -> Swift.Double
+  public func getLnLf() -> Swift.Double
+  public func getLnHf() -> Swift.Double
+  public func getLnTp() -> Swift.Double
+  public func getNormLf() -> Swift.Double
+  public func getNormHf() -> Swift.Double
+  public func getLfHf() -> Swift.Double
+  public func getCohRatio() -> Swift.Double
+  public func setBpm(bpm: Swift.Double)
+  public func setSdnn(sdnn: Swift.Double)
+  public func setRmssd(rmssd: Swift.Double)
+  public func setPnn50(pnn50: Swift.Double)
+  public func setVlf(vlf: Swift.Double)
+  public func setLF(lf: Swift.Double)
+  public func setHf(hf: Swift.Double)
+  public func setVlfp(vlfp: Swift.Double)
+  public func setLfp(lfp: Swift.Double)
+  public func setHfp(hfp: Swift.Double)
+  public func setTp(tp: Swift.Double)
+  public func setLnVlf(lnVlf: Swift.Double)
+  public func setLnLf(lnLf: Swift.Double)
+  public func setLnHf(lnHf: Swift.Double)
+  public func setLnTp(lnTp: Swift.Double)
+  public func setNormLf(normLf: Swift.Double)
+  public func setNormHf(normHf: Swift.Double)
+  public func setLfHf(lfHf: Swift.Double)
+  public func setCohRatio(cohRatio: Swift.Double)
+  public func setHRV(hrv: [Swift.Double])
+  public func setHRV(hrv: ESRC_SDK_iOS.ESRCHRV)
+  public func toArray() -> [Swift.Double]
+  public func toString() -> Swift.String
+  @objc deinit
+}
+public class ESRCEngagement {
+  public static var EMOTION_COUNT: Swift.Int
+  public static var EMOTION_NONE: Swift.Int
+  public static var EMOTION_NORMAL: Swift.Int
+  public static var EMOTION_FOCUSING: Swift.Int
+  public static var EMOTION_ENGAGEMENT: Swift.Int
+  public init()
+  public init(emotionProbs: [Swift.Double], emotion: Swift.Int)
+  public init(other: ESRC_SDK_iOS.ESRCEngagement)
+  public func getEmotionProbs() -> [Swift.Double]
+  public func getEmotionProbs(index: Swift.Int) -> Swift.Double
+  public func getEmotion() -> Swift.Int
+  public func setEmotionProbs(emotionProbs: [Swift.Double])
+  public func setEmotionProb(index: Swift.Int, emotionProb: Swift.Double)
+  public func setEmotion(emotion: Swift.Int)
+  public func setEngagement(engagement: ESRC_SDK_iOS.ESRCEngagement)
+  public func getEmotionStr() -> Swift.String
+  public func toString() -> Swift.String
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class APIClient {
+  public static func getInstance() -> ESRC_SDK_iOS.APIClient
+  public static func validateLicense(appId: Swift.String, handler: ESRC_SDK_iOS.ESRCLicenseHandler)
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class EngagementRecognizer {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class HRVAnalyzer {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ESRCLicense : ESRC_SDK_iOS.ESRCLicenseHandler {
+  public static var LICENSE_UNREG: Swift.Int
+  public static var LICENSE_FULLKIT: Swift.Int
+  public static var LICENSE_FACEKIT: Swift.Int
+  public static var LICENSE_BIOKIT: Swift.Int
+  public static func getInstance() -> ESRC_SDK_iOS.ESRCLicense
+  public static func initWithApplicationId(appId: Swift.String, licenseHandler: ESRC_SDK_iOS.ESRCLicenseHandler) -> Swift.Bool
+  public static func getApplicationId() -> Swift.String
+  public static func getType() -> Swift.Int
+  public static func isValidated() -> Swift.Bool
+  public func onValidatedLicense()
+  public func onInvalidatedLicense()
+  @objc deinit
+}
+public protocol ESRCLicenseHandler {
+  func onValidatedLicense()
+  func onInvalidatedLicense()
+}
+@_hasMissingDesignatedInitializers public class FaceDetector {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class ESRC {
+  public static func getSDKVersion() -> Swift.String
+  public static func getApplicationId() -> Swift.String
+  public static func getInstance() -> ESRC_SDK_iOS.ESRC
+  public static func initWithApplicationId(appId: Swift.String, licenseHandler: ESRC_SDK_iOS.ESRCLicenseHandler) -> Swift.Bool
+  public static func start(enableHRV: Swift.Bool, handler: ESRC_SDK_iOS.ESRCHandler) -> Swift.Bool
+  public static func stop() -> Swift.Bool
+  public static func feed(frame: UIKit.UIImage) -> Swift.Bool
+  public func getEnableHRV() -> Swift.Bool
+  public func getESRCHandler() -> ESRC_SDK_iOS.ESRCHandler?
+  @objc deinit
+}
+public protocol ESRCHandler {
+  func onDetectedFace(face: ESRC_SDK_iOS.ESRCFace)
+  func onNotDetectedFace()
+  func onDetectedFacialLandmark(facialLandmark: ESRC_SDK_iOS.ESRCFacialLandmark)
+  func onAnalyzedFacialActionUnit(facialActionUnit: ESRC_SDK_iOS.ESRCFacialActionUnit)
+  func onRecognizedFacialExpression(facialExpression: ESRC_SDK_iOS.ESRCFacialExpression)
+  func didChangedProgressRatioOnRemoteHR(progressRatio: Swift.Double)
+  func onEstimatedRemoteHR(remoteHR: ESRC_SDK_iOS.ESRCRemoteHR)
+  func didChangedProgressRatioOnHRV(progressRatio: Swift.Double)
+  func onAnalyzedHRV(hrv: ESRC_SDK_iOS.ESRCHRV)
+  func onRecognizedEngagement(engagement: ESRC_SDK_iOS.ESRCEngagement)
+}
+@_hasMissingDesignatedInitializers public class FacialExpressionRecognizer {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class FacialLandmarkDetector {
+  @objc deinit
+}
+@_hasMissingDesignatedInitializers public class FacialActionUnitAnalyzer {
+  @objc deinit
+}

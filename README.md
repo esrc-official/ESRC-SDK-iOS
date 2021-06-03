@@ -64,7 +64,7 @@ The ESRC SDK requires system permission. This permission allow the ESRC SDK to u
 You can use all classes and methods just with the following one import statement, without a bridging header file in Swift.
 
 ```swift
-import ESRC-SDK-iOS
+import ESRC_SDK_iOS
 ```
 
 ## Making your first recognition

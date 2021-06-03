@@ -2,7 +2,7 @@
 
 [![Platform](https://img.shields.io/badge/platform-iOS-orange.svg)](https://github.com/esrc-official/ESRC-SDK-iOS)
 [![Languages](https://img.shields.io/badge/language-Objective--C%20%7C%20Swift-orange.svg)](https://github.com/esrc-official/ESRC-SDK-iOS)
-[![Commercial License](https://img.shields.io/badge/License-Commercial-brightgreen.svg)](https://github.com/esrc-official/ESRC-SDK-iOS/blob/master/LICENSE)
+[![Commercial License](https://img.shields.io/badge/License-Commercial-brightgreen.svg)](https://github.com/esrc-official/ESRC-SDK-iOS/blob/master/LICENSE.md)
 
 ## Table of contents
 
@@ -20,9 +20,9 @@ Through our **ESRC SDK** for iOS, you can efficiently integrate real-time recogn
 
 The minimum requirements to use our iOS sample are:
 
-iOS 9.0 or later <br />
-Swift 4 or later, Objective-C <br />
-Xcode 9 or later, macOS Sierra or later <br />
+- iOS 9.0 or later <br />
+- Swift 4 or later, Objective-C <br />
+- Xcode 9 or later, macOS Sierra or later <br />
 
 ### Key functions
 

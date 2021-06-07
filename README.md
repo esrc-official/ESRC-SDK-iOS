@@ -53,7 +53,7 @@ Installing the ESRC SDK is simple if you're familiar with using external frameow
 
 ### Step 2: Download and install the assets
 
-Download the `assets` file from our [GitHub repository](https://github.com/esrc-official/ESRC-SDK-iOS/assets). Copy the downloaded assets file into your project directory. Go to `Build Phases` tab of your Xcode Project Navigator, and scroll down to `Copy Bundle Resourses` menu. Click the + button, choose select the assets file that you've previously downloaded. 
+Download the `assets` file from our [GitHub repository](https://github.com/esrc-official/ESRC-SDK-iOS/tree/master/assets). Copy the downloaded assets file into your project directory. Go to `Build Phases` tab of your Xcode Project Navigator, and scroll down to `Copy Bundle Resourses` menu. Click the + button, choose select the assets file that you've previously downloaded. 
 
 ### Step 3: Grant system permission to the ESRC SDK
 

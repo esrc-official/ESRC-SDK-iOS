@@ -45,7 +45,7 @@ Our sample app has the core features of the ESRC SDK. Download the app from our 
 
 ## Install ESRC SDK
 
-Through our **ESRC SDK** for iOS, you can efficiently integrate real-time recognition of facial expression, heart response and emotions into your mobile app. This and other pages in the Getting Started provide the ESRC SDK’s structure and installation steps, then goes through the preliminary steps of implementing the ESRC SDK in your own project.
+This page provides a step-by-step guide that demonstrates how to build and configure an in-app face and bio-analysis using the ESRC SDK.
 
 ### Step 1: Download and install the ESRC SDK
 

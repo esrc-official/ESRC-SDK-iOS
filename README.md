@@ -28,6 +28,7 @@ The minimum requirements to use our iOS sample are:
 
 |Function|Description|
 |---|---|
+|Measurement Environment Analysis| Analyze measurement environment including brightness. |
 |Face Detection| Detect a single face using a front camera on mobile. |
 |Facial Landmark Detection| Detect x and y coordinates of 68 facial landmarks in 2D space from the detected face. |
 |Facial Action Unit Analysis| Extract centroid, area, theta and R distance of each 39 facial action unit from the detected 68 facial landmarks based on Facial Action Coding System determined by Paul Ekman. |
@@ -94,28 +95,39 @@ ESRC.initWithApplicationId(appId: APP_ID, licenseHandler:  ESRCLicenseHandler() 
 
 ### Step 2: Start the ESRC SDK
 
-Start the ESRC SDK to recognize your facial expression, heart response and emotion. To the `start()` method, pass the `ENABLE_HRV` parameter for whether to analyze HRV and the `ESRCHandler` to handle the results. You should implement the callback method of `ESRCHandler` interface. So, you can receive the results of face, facial landmark, facial expression, heart rate, heart rate variability and engagement. Please refer to **[sample app](https://github.com/esrc-official/ESRC-iOS)**.
+Start the ESRC SDK to recognize your facial expression. To the `start()` method, pass the `ESRCProperty` to select analysis modules and the `ESRCHandler` to handle the results. You should implement the callback method of `ESRCHandler` interface. So, you can receive the results of face, facial landmark, facial expression, heart rate, heart rate variability and engagement. Please refer to **[sample app](https://github.com/esrc-official/ESRC-iOS)**.
 
 ```swift
-ESRC.start(enableHRV: ENABLE_HRV, handler: ESRCHandler() {
-    func onDetectedFace(face: ESRCFace) {
-        // The face is detected.
-        // Through the “face” parameter of the onDetectedFace() callback method,
-        // you can get the location of the face from the result object
-        // that ESRC SDK has passed to the onDetectedFace().
-        …
-    }
+ESRC.start(
+    property: ESRCProperty(
+        enableMeasureEnv: true,  // Whether analyze measurement environment or not.
+        enableFace: true,  // Whether detect face or not.
+        enableFacialLandmark: true,  // Whether detect facial landmark or not. If enableFace is false, it is also automatically set to false.
+        enableFacialActionUnit: true,  // Whether analyze facial action unit or not. If enableFace or enableFacialLandmark is false, it is also automatically set to false.
+        enableFacialExpression: true,  // Whether recognize facial expression or not. If enableFace is false, it is also automatically set to false.
+        enableRemoteHR: true,  // Whether estimate remote hr or not.
+        enableHRV: true,  // Whether analyze HRV or not. If enableRemoteHR is false, it is also automatically
+        enableEngagement: true),  // Whether recognize engagement or not. If enableRemoteHR and enableHRV are false, it is also automatically set to false.
+    handler: ESRCHandler() {
+        func onDetectedFace(face: ESRCFace) {
+            // The face is detected.
+            // Through the “face” parameter of the onDetectedFace() callback method,
+            // you can get the location of the face from the result object
+            // that ESRC SDK has passed to the onDetectedFace().
+            …
+        }
     
-    // Please implement other callback method of ESRCHandler interface.
-    func onNotDetectedFace() { … }
-    func onDetectedFacialLandmark(facialLandmark: ESRCFacialLandmark) { … }
-    func onAnalyzedFacialActionUnit(facialActionUnit: ESRCFacialActionUnit) { … }
-    func onRecognizedFacialExpression(facialExpression: ESRCFacialExpression) { … }
-    func didChangedProgressRatioOnRemoteHR(progressRatio: Double) { … }
-    func onEstimatedRemoteHR(remoteHR: ESRCRemoteHR) { … }
-    func didChangedProgressRatioOnHRV(progressRatio: Double) { … }
-    func onAnalyzedHRV(hrv: ESRCHRV) { … }
-    func onRecognizedEngagement(engagement: ESRCEngagement) { … }
+        // Please implement other callback method of ESRCHandler interface.
+        func onNotDetectedFace() { … }
+        func onAnalyzedMeasureEnv(measureEnv: ESRCMeasureEnv) { … }
+        func onDetectedFacialLandmark(facialLandmark: ESRCFacialLandmark) { … }
+        func onAnalyzedFacialActionUnit(facialActionUnit: ESRCFacialActionUnit) { … }
+        func onRecognizedFacialExpression(facialExpression: ESRCFacialExpression) { … }
+        func didChangedProgressRatioOnRemoteHR(progressRatio: Double) { … }
+        func onEstimatedRemoteHR(remoteHR: ESRCRemoteHR) { … }
+        func didChangedProgressRatioOnHRV(progressRatio: Double) { … }
+        func onAnalyzedHRV(hrv: ESRCHRV) { … }
+        func onRecognizedEngagement(engagement: ESRCEngagement) { … }
 });
 ```
 

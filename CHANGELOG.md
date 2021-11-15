@@ -10,4 +10,4 @@
 
 ### 2.4.1 (November 15, 2021)
  - Build by Xcode 13.1.
- - Chage window size of HRV analysis as 180s.
+ - Change window size of HRV analysis as 180s.

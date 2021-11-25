@@ -107,7 +107,8 @@ ESRC.start(
         enableFacialExpression: true,  // Whether recognize facial expression or not. If enableFace is false, it is also automatically set to false.
         enableRemoteHR: true,  // Whether estimate remote hr or not.
         enableHRV: true,  // Whether analyze HRV or not. If enableRemoteHR is false, it is also automatically
-        enableEngagement: true),  // Whether recognize engagement or not. If enableRemoteHR and enableHRV are false, it is also automatically set to false.
+        enableEngagement: true,  // Whether recognize engagement or not. If enableRemoteHR and enableHRV are false, it is also automatically set to false.
+        facialExpressionType: ESRCFacialExpression.FACIAL_EXPRESSION_TYPE_ESRC),  // Type of facial expression.
     handler: ESRCHandler() {
         func onDetectedFace(face: ESRCFace) {
             // The face is detected.

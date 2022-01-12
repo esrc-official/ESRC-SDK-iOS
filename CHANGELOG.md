@@ -16,3 +16,7 @@
  - Change window size of HRV analysis as 60s.
  - Add type of facial expression recognition.
  - Add score of engagement.
+
+### 2.4.3 (January 12, 2022)
+ - Improve validation of license.
+ - Disable bitcode.

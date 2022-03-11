@@ -20,3 +20,7 @@
 ### 2.4.3 (January 12, 2022)
  - Improve validation of license.
  - Disable bitcode.
+
+### 2.4.4 (March 03, 2022)
+ - Change facial expression recognition to basic facial expression.
+ - Add valence facial expression recognition.

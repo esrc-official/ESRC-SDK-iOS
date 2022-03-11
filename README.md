@@ -32,8 +32,9 @@ The minimum requirements to use our iOS sample are:
 |Face Detection| Detect a single face using a front camera on mobile. |
 |Facial Landmark Detection| Detect x and y coordinates of 68 facial landmarks in 2D space from the detected face. |
 |Facial Action Unit Analysis| Extract centroid, area, theta and R distance of each 39 facial action unit from the detected 68 facial landmarks based on Facial Action Coding System determined by Paul Ekman. |
-|Facial Expression Recognition| Recognize 7 facial expressions consist of neutral, happiness, sad-ness, surprise, anger, disgust and fear based on 6 basic emotions. |
-|Heart Rate Estimation| Estimate heart rate from facial color variations and head move-ments caused by heartbeat using Remote Photoplethysmography and Ballistocardiography. |
+|Basic Facial Expression Recognition| Recognize 7 facial expressions consist of neutral, happiness, sadness, surprise, anger, disgust and fear based on 6 basic emotions. |
+|Valence Facial Expression Recognition| Recognize 3 facial expressions consist of neutral, positive and negative based on valence of two-dimensional emotion. |
+|Heart Rate Estimation| Estimate heart rate from facial color variations and head movements caused by heartbeat using Remote Photoplethysmography and Ballistocardiography. |
 |Heart Rate Variability Analysis| Extract 19 variables of heart rate variability reflecting autonomic nervous system activity from the accumulated heart rates. |
 |Engagement Recognition| Recognize engagement level from balance of autonomic nervous system by heart rate variability analysis. |
 
@@ -104,11 +105,11 @@ ESRC.start(
         enableFace: true,  // Whether detect face or not.
         enableFacialLandmark: true,  // Whether detect facial landmark or not. If enableFace is false, it is also automatically set to false.
         enableFacialActionUnit: true,  // Whether analyze facial action unit or not. If enableFace or enableFacialLandmark is false, it is also automatically set to false.
-        enableFacialExpression: true,  // Whether recognize facial expression or not. If enableFace is false, it is also automatically set to false.
+        enableBasicFacialExpression: true,  // Whether recognize basic facial expression or not. If enableFace is false, it is also automatically set to false.
+        enableValenceFacialExpression: true,  // Whether recognize valence facial expression or not. If enableFace is false, it is also automatically set to false.
         enableRemoteHR: true,  // Whether estimate remote hr or not.
         enableHRV: true,  // Whether analyze HRV or not. If enableRemoteHR is false, it is also automatically
-        enableEngagement: true,  // Whether recognize engagement or not. If enableRemoteHR and enableHRV are false, it is also automatically set to false.
-        facialExpressionType: ESRCFacialExpression.FACIAL_EXPRESSION_TYPE_ESRC),  // Type of facial expression.
+        enableEngagement: true),  // Whether recognize engagement or not. If enableRemoteHR and enableHRV are false, it is also automatically set to false.        
     handler: ESRCHandler() {
         func onDetectedFace(face: ESRCFace) {
             // The face is detected.
@@ -123,7 +124,8 @@ ESRC.start(
         func onAnalyzedMeasureEnv(measureEnv: ESRCMeasureEnv) { … }
         func onDetectedFacialLandmark(facialLandmark: ESRCFacialLandmark) { … }
         func onAnalyzedFacialActionUnit(facialActionUnit: ESRCFacialActionUnit) { … }
-        func onRecognizedFacialExpression(facialExpression: ESRCFacialExpression) { … }
+        func onRecognizedBasicFacialExpression(facialExpression: ESRCBasicFacialExpression) { … }
+        func onRecognizedValenceFacialExpression(facialExpression: ESRCValenceFacialExpression) { … }
         func didChangedProgressRatioOnRemoteHR(progressRatio: Double) { … }
         func onEstimatedRemoteHR(remoteHR: ESRCRemoteHR) { … }
         func didChangedProgressRatioOnHRV(progressRatio: Double) { … }

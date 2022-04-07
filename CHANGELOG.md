@@ -24,3 +24,6 @@
 ### 2.4.4 (March 28, 2022)
  - Change facial expression recognition to basic facial expression.
  - Add valence facial expression recognition.
+
+### 2.4.5 (April 06, 2022)
+ - Improve alrotirhm of engagement recognition.

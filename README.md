@@ -120,7 +120,6 @@ ESRC.start(
         }
     
         // Please implement other callback method of ESRCHandler interface.
-        func onNotDetectedFace() { … }
         func onAnalyzedMeasureEnv(measureEnv: ESRCMeasureEnv) { … }
         func onDetectedFacialLandmark(facialLandmark: ESRCFacialLandmark) { … }
         func onAnalyzedFacialActionUnit(facialActionUnit: ESRCFacialActionUnit) { … }

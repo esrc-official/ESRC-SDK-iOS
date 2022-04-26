@@ -30,15 +30,15 @@
 		</data>
 		<key>Modules/ESRC_SDK_iOS.swiftmodule/Project/arm64-apple-ios.swiftsourceinfo</key>
 		<data>
-		VA/dn7MJMUcimdihqV4bPJR6E0E=
+		be8xMMfxF9FLYJtoDDtXWn3IKaU=
 		</data>
 		<key>Modules/ESRC_SDK_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<data>
-		CwzR+BmCwS+GdzfbmjKbNO9pBAY=
+		qy645I7RRaJFrLC5Y1reyNWxruY=
 		</data>
 		<key>Modules/ESRC_SDK_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<data>
-		H+rV/V4oNiO7fAGRblF/1+rotwo=
+		CklOMKff0XbMJhCTZE5iC+221xs=
 		</data>
 		<key>Modules/module.modulemap</key>
 		<data>
@@ -106,21 +106,21 @@
 		<dict>
 			<key>hash2</key>
 			<data>
-			/Eah2yYk4YdlHdXDA3QmjljDIKZv1FEiyTVqqxJ5Ww0=
+			K7Lugs66Oe7DZaKsQPEXX8yK37OwRdcV9jEo+CCJ1L4=
 			</data>
 		</dict>
 		<key>Modules/ESRC_SDK_iOS.swiftmodule/arm64-apple-ios.swiftdoc</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			8UUrawr3JqiS/xJNHkRBc8pBOEgbeCn9ihz7hn330XI=
+			xgJbnSaSbfMmRvFNiU+vX/Wrwfo3bQFS+78xcUmwiiU=
 			</data>
 		</dict>
 		<key>Modules/ESRC_SDK_iOS.swiftmodule/arm64-apple-ios.swiftmodule</key>
 		<dict>
 			<key>hash2</key>
 			<data>
-			p2UZztNTsGhUN4KarhqsyIl14rKlDbdYF4TrCem2Dlw=
+			Js3B16VRA5ETDVkdjWFcqAyhUBvFy3pCUxF1YHNyAoY=
 			</data>
 		</dict>
 		<key>Modules/module.modulemap</key>

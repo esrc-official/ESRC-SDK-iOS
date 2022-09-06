@@ -32,3 +32,6 @@
  - Change some ESRCType class constant to class enum (basic facial expression, valence facial expression, and engagement).
  - Remove onNotDetectedFace callback method -> Add isDetect parameter in ESRCFace class.
  - Add identification parameter in all ERCType class.
+
+### 2.5.3 (September 06, 2022)
+ - Improve RPPG and HRV algorithm.

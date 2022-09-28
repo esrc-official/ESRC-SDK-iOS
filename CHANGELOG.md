@@ -35,3 +35,6 @@
 
 ### 2.5.3 (September 06, 2022)
  - Improve RPPG and HRV algorithm.
+
+### 2.5.4 (September 28, 2022)
+ - Added exception handling when wrong image is input.

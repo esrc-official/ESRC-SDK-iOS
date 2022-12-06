@@ -41,3 +41,6 @@
  
 ### 2.5.8 (November 04, 2022)
  - Improve procedure for validation of license key.
+
+### 2.6.1 (December 06, 2022)
+ - Improve HRV algorithm.
